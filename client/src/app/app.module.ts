@@ -5,6 +5,7 @@ import { BasicService } from "./basic.service";
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule, ROUTING_COMPONENTS } from './app-routing.module';
 import { SocketService } from "./socket.service";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SocketService } from "./socket.service";
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [BasicService, SocketService],
   bootstrap: [AppComponent]

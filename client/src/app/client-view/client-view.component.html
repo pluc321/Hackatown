@@ -1,3 +1,26 @@
-<p>
-  client-view works!
-</p>
+
+<h2>Les Restaurants</h2>
+
+
+<div>
+<ul class="restos">
+  <li *ngFor="let resto of restos" [class.selected]="resto === selectedResto" (click)="onSelect(resto)">
+    <span class="badge">
+      {{resto.id}}
+    </span>
+    {{resto.name}}
+    {{resto.etoiles}}
+
+  </li>
+</ul>
+</div>
+<div *ngIf="selectedResto">
+  <h2>{{selectedHero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedResto.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedResto.name" placeholder="name">
+    </label>
+  </div>
+</div>
+
