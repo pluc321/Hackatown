@@ -4,10 +4,14 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { BasicService } from "./basic.service";
 import { HttpClientModule } from "@angular/common/http";
+import { ClientViewComponent } from './client-view/client-view.component';
+import { RestoViewComponent } from './resto-view/resto-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClientViewComponent,
+    RestoViewComponent
   ],
   imports: [
     BrowserModule,
