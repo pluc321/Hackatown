@@ -12,7 +12,6 @@ import { LoginFormComponent } from './principal-view/login-form/login-form.compo
 import { FormsModule }   from '@angular/forms';
 import { ClickComponent } from './principal-view/click/click.component';
 import { SocketService } from "./socket.service";
-import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
