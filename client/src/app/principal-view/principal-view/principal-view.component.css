@@ -1,0 +1,23 @@
+#boutonLogin{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#loginClient{
+margin-right: 5%;
+}
+
+#loginResto{
+    margin-left: 5%;
+}
+
+img { 
+    display: inline-block;
+  }

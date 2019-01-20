@@ -1,3 +1,6 @@
-<p>
-  principal-view works!
-</p>
+<img src="logo.png" width="100" height="80" alt="My Pic">
+<div id="boutonLogin" [hidden]="appear">
+    <button (click)="onClickMe()" mat-raised-button id="loginClient">Login client </button>
+  <button mat-raised-button id="loginResto">Login resto</button>
+</div>
+<app-login-form [hidden]="hide"></app-login-form>

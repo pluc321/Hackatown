@@ -6,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./principal-view.component.css']
 })
 export class PrincipalViewComponent implements OnInit {
+  hide: boolean = true;
+  appear: boolean = false;
+  onClickMe() {
+    this.hide = false;
+    this.appear = true;
+  }
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
