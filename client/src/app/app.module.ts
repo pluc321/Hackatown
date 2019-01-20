@@ -11,6 +11,9 @@ import { PrincipalViewComponent } from './principal-view/principal-view/principa
 import { LoginFormComponent } from './principal-view/login-form/login-form.component';
 import { FormsModule }   from '@angular/forms';
 import { ClickComponent } from './principal-view/click/click.component';
+import { SocketService } from "./socket.service";
+import {FormsModule} from "@angular/forms";
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,7 @@ import { ClickComponent } from './principal-view/click/click.component';
     MaterialModule,
     FormsModule
   ],
-  providers: [BasicService],
+  providers: [BasicService, SocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

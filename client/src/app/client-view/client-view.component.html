@@ -1,3 +1,33 @@
-<p>
-  client-view works!
-</p>
+<head>
+  <script type="text/javascript" src="script.js">
+  </script>
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<h2>Les Restaurants</h2>
+
+
+<div id="test"></div>
+<div>
+<ul class="restos">
+  <li *ngFor="let resto of restos" [class.selected]="resto === selectedResto" (click)="onSelect(resto)">
+    <span class="badge">
+      {{resto.id}}
+    </span>
+    {{resto.name}}
+
+    <i class="fas fa-star"></i>
+  </li>
+</ul>
+</div>
+
+<input type="button" onclick="test()" value="Display JS Array"/>
+<div *ngIf="selectedResto">
+  <h2>{{selectedResto.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedResto.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedResto.name" placeholder="name">
+    </label>
+  </div>
+</div>
+
